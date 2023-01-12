@@ -4,12 +4,10 @@ public class Node
 {
     Node next;
     int data;
-
     public Node(int data)
     {
         this.data = data;
     }
-
 }
 
 class LinkedList
@@ -20,7 +18,7 @@ class LinkedList
         if(head == null)
         {
             head = new Node(data);
-            System.out.println("new data is : " + data);
+            System.out.println("new element is " + data);
             return;
         }
 
@@ -31,7 +29,7 @@ class LinkedList
         }
 
         current.next = new Node(data);
-
+        System.out.println("new element is " + data);
     }
 
     void aprepend(int data)
@@ -58,8 +56,8 @@ class LinkedList
                 return;
             }
             current = current.next;
-            System.out.println(current.data);
         }
+        System.out.println("deleting ... " + data);
     }
 
 }

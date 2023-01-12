@@ -1,12 +1,14 @@
 package org.example;
 
-import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
 
-        LinkedList l = new LinkedList();
+        LinkedList list = new LinkedList();
 
-        l.aprepend(1);
+        list.append(5);
+//        list.deleteWithData(3);
+//        list.aprepend(1);
+
     }
 }
