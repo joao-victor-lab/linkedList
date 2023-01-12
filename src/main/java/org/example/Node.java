@@ -20,6 +20,7 @@ class LinkedList
         if(head == null)
         {
             head = new Node(data);
+            System.out.println("new data is : " + data);
             return;
         }
 
@@ -38,6 +39,7 @@ class LinkedList
         Node newHead = new Node(data);
         newHead.next = head;
         head = newHead;
+        System.out.println("new head is " + data);
     }
 
     void deleteWithData(int data)
@@ -56,6 +58,7 @@ class LinkedList
                 return;
             }
             current = current.next;
+            System.out.println(current.data);
         }
     }
 
